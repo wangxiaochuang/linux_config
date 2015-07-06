@@ -10,7 +10,7 @@ do
     then
         continue
     fi
-    rm -rf ~/$file 2>null
-    ln -s $config_dir/$file ./ 2>null
+    rm -rf ~/$file 2>/dev/null
+    ln -s $config_dir/$file ./ 2>/dev/null
 done
 
