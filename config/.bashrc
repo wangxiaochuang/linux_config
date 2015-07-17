@@ -126,6 +126,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# swap capsLock and right-ctrl
+#xmodmap .Xmodmap
+
 #NDK
 #export NDK=/home/jackstraw/software/adt/adt-bundle-linux-x86_64-20140702/android-ndk-r9d
 export NDK=/home/jackstraw/software/adt/adt-bundle-linux-x86_64-20140702/ndk-r10d
@@ -138,7 +141,7 @@ export CLASSPATH=$JAVA_HOME/lib:$JAVA_HOME/jre/lib
 #set GNUstep
 OBJC_MAKEFILES=/usr/share/GNUstep/Makefiles
 export OBJC_MAKEFILES
-source $OBJC_MAKEFILES/GNUstep.sh
+#source $OBJC_MAKEFILES/GNUstep.sh
 
 export WXC=/home/jackstraw/Documents/code/mycode/wxc
 
