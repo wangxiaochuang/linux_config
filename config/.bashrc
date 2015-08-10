@@ -90,16 +90,22 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias sd='shutdown -h 0'
+alias myapp='start_my_app'
 
 alias cdwxc='cd ~/Documents/code/mycode/wxc'
-alias xp='rdesktop -a 16 192.168.187.128 -u administrator -p jackstraw -K -g 1364*768 -D &'
+alias xp='rdesktop -a 16 172.16.247.128 -u administrator -p jackstraw -K -g workarea -D &'
 alias myxp='rdesktop -a 16 192.168.187.128 -u administrator -p jackstraw -g workarea -D &'
-alias mywin7='rdesktop -a 16 192.168.22.49 -u a -p jackstraw -g workarea -D &'
+alias mywin7='rdesktop -a 16 192.168.22.49 -u a -p jackstraw -K -g workarea -D &'
 alias mycentos='ssh -o GSSAPIAuthentication=no centos@192.168.22.212'
 alias centos='ssh -o GSSAPIAuthentication=no 172.16.183.128'
 alias xcode='ssh -o GSSAPIAuthentication=no 172.16.154.132'
 alias dbs='sudo mount -t cifs -o username=wxc,password=wxc,uid=1000,gid=1000 //192.168.22.209/share /home/jackstraw/share'
 alias tom='ssh -o GSSAPIAuthentication=no tom@192.168.31.116'
+
+alias vm-kali-gui='rdesktop -a 16 192.168.22.116 -u root -p jackstraw -K -g workarea -D &'
+alias vm-kali-cmd='ssh root@192.168.22.116'
+alias add-kali-gui='rdesktop -a 16 192.168.22.49 -u root -p jackstraw -K -g workarea -D &'
+alias add-kali-cmd='ssh root@192.168.22.49'
 
 
 # Add an "alert" alias for long running commands.  Use like so:

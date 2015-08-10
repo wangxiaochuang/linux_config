@@ -2,7 +2,7 @@ set nu
 colorscheme evening
 filetype indent on
 
-autocmd FileType js,m,c,java,py,sh,cpp,html set shiftwidth=4|set ts=4|set expandtab
+autocmd FileType js,m,c,java,py,sh,cpp,html,php set shiftwidth=4|set ts=4|set expandtab
 
 set fdm=syntax
 syntax on

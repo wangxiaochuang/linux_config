@@ -1,9 +1,9 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/jackstraw/Documents/security/svn/secgroup/trunk/source/002Financial/001FinancialSecLib'
-let g:netrw_dirhist_2='/home/jackstraw/tmp'
-let g:netrw_dirhist_3='/home/jackstraw/tmp/share/github/.vimrc'
-let g:netrw_dirhist_4='/home/jackstraw/Documents/security/svn/secgroup/trunk/source/002Financial/001FinancialSecLib/client'
-let g:netrw_dirhist_5='/home/jackstraw/Documents/security/svn/secgroup/trunk/source/002Financial/001FinancialSecLib/client_64'
-let g:netrw_dirhist_6='/home/jackstraw/Documents/security/svn/secgroup/trunk/source/002Financial/001FinancialSecLib/src/interface/financial'
-let g:netrw_dirhist_7='/home/jackstraw/Documents/github/ubuntu/config'
+let g:netrw_dirhist_1='/home/jackstraw/.config/enchant'
+let g:netrw_dirhist_2='/home/jackstraw/.config/menus'
+let g:netrw_dirhist_3='/home/jackstraw/.config/gnome-session'
+let g:netrw_dirhist_4='/home/jackstraw/software/myconfig'
+let g:netrw_dirhist_5='/home/jackstraw/Documents/security/svn/secgroup/trunk/source/002Financial/001FinancialSecLib/output'
+let g:netrw_dirhist_6='/home/jackstraw/Documents/security/svn/secgroup/trunk/source/002Financial/001FinancialSecLib/output/backup'
+let g:netrw_dirhist_7='/home/jackstraw/Documents/security/svn/secgroup/trunk/source/002Financial/001FinancialSecLib/test'
