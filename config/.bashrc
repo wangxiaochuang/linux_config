@@ -89,13 +89,13 @@ alias ll='ls -al'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias sd='shutdown -h 0'
+alias sd='sudo /sbin/shutdown -h 0'
 alias myapp='start_my_app'
 
 alias cdwxc='cd ~/Documents/code/mycode/wxc'
 alias xp='rdesktop -a 16 172.16.247.128 -u administrator -p jackstraw -K -g workarea -D &'
 alias myxp='rdesktop -a 16 192.168.187.128 -u administrator -p jackstraw -g workarea -D &'
-alias mywin7='rdesktop -a 16 192.168.22.49 -u a -p jackstraw -K -g workarea -D &'
+alias mywin7='rdesktop -a 16 192.168.22.49 -u a -p jackstraw -g workarea -D &'
 alias mycentos='ssh -o GSSAPIAuthentication=no centos@192.168.22.212'
 alias centos='ssh -o GSSAPIAuthentication=no 172.16.183.128'
 alias xcode='ssh -o GSSAPIAuthentication=no 172.16.154.132'
@@ -144,11 +144,6 @@ export JAVA_HOME=~/software/java/jdk1.8.0_25
 #export JAVA_HOME=~/software/java/jdk1.6.0_45
 export CLASSPATH=$JAVA_HOME/lib:$JAVA_HOME/jre/lib
 
-#set GNUstep
-OBJC_MAKEFILES=/usr/share/GNUstep/Makefiles
-export OBJC_MAKEFILES
-#source $OBJC_MAKEFILES/GNUstep.sh
-
 export WXC=/home/jackstraw/Documents/code/mycode/wxc
 
 
@@ -165,6 +160,6 @@ export WORK_HOME
 LD_LIBRARY_PATH=/home/jackstraw/symbol/001FinancialSecLib/output/server/:$WXC/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH
 
-export PATH=~/software/bin:$JAVA_HOME/bin:$PATH
+export PATH=~/software/bin:$JAVA_HOME/bin:$PATH:/sbin
 
 export PYTHONSTARTUP=/home/jackstraw/.pythonstartup
