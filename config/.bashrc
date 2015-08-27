@@ -107,6 +107,7 @@ alias vm-kali-cmd='ssh root@192.168.22.116'
 alias add-kali-gui='rdesktop -a 16 192.168.22.49 -u root -p jackstrawxx -K -g workarea -D &'
 alias add-kali-cmd='ssh root@192.168.22.49'
 alias server52='ssh jackstraw@192.168.31.52'
+alias msf='ssh msf@192.168.31.52'
 alias ws='ssh wsjswy@192.168.22.42'
 
 
