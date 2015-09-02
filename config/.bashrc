@@ -96,7 +96,7 @@ alias cdwxc='cd ~/Documents/code/mycode/wxc'
 alias xp='rdesktop -a 16 172.16.247.128 -u administrator -p jackstraw -K -g workarea -D &'
 alias myxp='rdesktop -a 16 192.168.187.128 -u administrator -p jackstraw -g workarea -D &'
 alias mywin7='rdesktop -a 16 192.168.22.49 -u a -p jackstraw -K -g workarea -D &'
-alias centos='ssh -o GSSAPIAuthentication=no 192.168.22.181'
+alias centos='ssh -o GSSAPIAuthentication=no root@192.168.22.182'
 alias xcode='ssh -o GSSAPIAuthentication=no 172.16.154.132'
 alias dbs='sudo mount -t cifs -o username=wxc,password=wxc,uid=1000,gid=1000 //192.168.22.209/share /home/jackstraw/share'
 alias tom='ssh -o GSSAPIAuthentication=no tom@192.168.31.116'
@@ -106,9 +106,7 @@ alias vm-kali-cmd='ssh root@192.168.22.116'
 alias add-kali-gui='rdesktop -a 16 192.168.22.49 -u root -p jackstrawxx -K -g workarea -D &'
 alias add-kali-cmd='ssh root@192.168.22.49'
 alias server52='ssh jackstraw@192.168.31.52'
-alias msf='ssh msf@192.168.31.52'
 alias ws='ssh wsjswy@192.168.22.42'
-alias toor='rdesktop -a 16 10.10.10.128 -u root -p toor -K -g workarea -D &'
 
 
 # Add an "alert" alias for long running commands.  Use like so:
