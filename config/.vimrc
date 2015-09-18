@@ -9,7 +9,7 @@ syntax on
 
 au BufNewFile,BufRead *.pc set filetype=c
 
-set tags=/home/jackstraw/Documents/security/security1/PPBankCrypto/tags,~/symbol/001FinancialSecLib/tags,$WXC/tags,$WXC/mySourceCode/tags,~/software/source/Python-2.7.10/tags
+set tags=/home/jackstraw/Documents/github/threadPool/tags,$WXC/tags,/home/jackstraw/Documents/security/security1/PPBankCrypto/tags,~/symbol/001FinancialSecLib/tags,$WXC/mySourceCode/tags,~/software/source/Python-2.7.10/tags
 
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
