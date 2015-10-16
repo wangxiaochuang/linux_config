@@ -34,6 +34,9 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File = 1
 noremap <F9> :TlistToggle<CR>
 
+" python complete
+let g:pydiction_location = '~/.vim/tools/pydiction/complete-dict'
+
 "inoremap ( ()<esc>i
 "inoremap { {<esc>o}<esc>O
 "inoremap [ []<esc>i
