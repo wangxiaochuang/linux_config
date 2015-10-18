@@ -110,7 +110,7 @@ alias ws='ssh wsjswy@192.168.22.35'
 
 alias amazon='autossh -M 2345 -i ~/.ssh/jackstraw.pem ubuntu@ec2-52-68-181-14.ap-northeast-1.compute.amazonaws.com -N -D 1234'
 
-alias goagent='python ~/Documents/github/ubuntu/resource/myagent/proxy.py'
+alias goagent='python ~/Documents/github/ubuntu/resource/myagent/proxy.py&'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
