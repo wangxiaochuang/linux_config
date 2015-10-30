@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>welcome to gitnote</title>
+        <script type='text/javascript' src='static/js/jquery-2.1.1.min.js' ></script>
+    </head>
+    <script>
+        $(document).ready(function(){
+            $('#addnote').click(function(){
+                alert($('#filter').val());
+            });
+            $('#filter').change(function(){
+                $.ajax({url:"filter/?projName="+$('#filter').val(), async:false});
+                $("#result").html({% res %});
+                /*
+                $("#result").html(
+                    <tr>
+                        <td>projName</td>
+                        <td>appName</td>
+                        <td>servName</td>
+                        <td>opTime</td>
+                        <td>gitcommitId</td>
+                        <td>state</td>
+                        <td>tester</td>
+                        <td>remark</td>
+                    </tr>
+                    {% for note in notes %}
+                    <tr>
+                        <td>{{note.projName}}</td>
+                        <td>{{note.appName}}</td>
+                        <td>{{note.servName}}</td>
+                        <td>{{note.opTime}}</td>
+                        <td>{{note.gitcommitId}}</td>
+                        <td>{{note.state}}</td>
+                        <td>{{note.tester}}</td>
+                        <td>{{note.remark}}</td>
+                    </tr>
+                    {% endfor %}
+                );
+                    */
+            });
+        });
+    </script>
+    <body>
+        <p>git note</p>
+        <div>
+            filter:
+            <select id="filter">
+                <option value="0">--select--</option>
+                {% for note in notes %}
+                <option value="{{note.projName}}">{{note.projName}}</option>
+                {% endfor %}
+            </select>
+            <input type='button' id='addnote' value='add'/>
+        </div>
+        <div>
+        <table id="result" border="1">
+        <tr>
+            <td>projName</td>
+            <td>appName</td>
+            <td>servName</td>
+            <td>opTime</td>
+            <td>gitcommitId</td>
+            <td>state</td>
+            <td>tester</td>
+            <td>remark</td>
+        </tr>
+        {% for note in notes %}
+        <tr>
+            <td>{{note.projName}}</td>
+            <td>{{note.appName}}</td>
+            <td>{{note.servName}}</td>
+            <td>{{note.opTime}}</td>
+            <td>{{note.gitcommitId}}</td>
+            <td>{{note.state}}</td>
+            <td>{{note.tester}}</td>
+            <td>{{note.remark}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+        </div>
+    </body>
+</html>
