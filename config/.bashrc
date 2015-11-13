@@ -140,29 +140,19 @@ fi
 #xmodmap .Xmodmap
 
 #NDK
-#export NDK=/home/jackstraw/software/adt/adt-bundle-linux-x86_64-20140702/android-ndk-r9d
 export NDK=/home/jackstraw/software/adt/adt-bundle-linux-x86_64-20140702/ndk-r10d
 
 #JAVA
-export JAVA_HOME=~/software/java/jdk1.8.0_25
-#export JAVA_HOME=~/software/java/jdk1.6.0_45
+#export JAVA_HOME=~/software/java/jdk1.8.0_25
+export JAVA_HOME=~/software/java/jdk1.6.0_45
 export CLASSPATH=$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/jre/lib
 
 export WXC=/home/jackstraw/Documents/code/mycode/wxc
-
-
-#easy pay
-export EASY_PAY=/home/jackstraw/Documents/security/007EasyPay/002src_branch
-#ANDROID_TOOLS=$EASY_PAY/tools
 #export ANDROID_TOOLS
 
+export LD_LIBRARY_PATH=/home/jackstraw/symbol/001FinancialSecLib/output/server/:$LD_LIBRARY_PATH
 
-WORK_HOME=$EASY_PAY/002EasyPaySecLibWrap/adv_ppsec_lib
-export WORK_HOME
-
-
-LD_LIBRARY_PATH=/home/jackstraw/symbol/001FinancialSecLib/output/server/:$WXC/lib:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH
+#export CPLUS_INCLUDE_PATH=/home/jackstraw/software/include
 
 export PATH=~/software/bin:$JAVA_HOME/bin:$PATH:/sbin
 
