@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/jackstraw/Documents/security/svn/secgroup/trunk/source/PPBankTest/cdms/testdata'
 let g:netrw_dirhist_2='/home/suse/Documents/github/ubuntu/resource/myagent/ip_Update'
 let g:netrw_dirhist_3='/home/suse/Documents/github/bcloud/bcloud'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/home/jackstraw/.ipython'
 let g:netrw_dirhist_5='/home/jackstraw/.ipython/extensions'
 let g:netrw_dirhist_6='/home/jackstraw/tmp/django/mysite/mysite'
 let g:netrw_dirhist_7='/home/jackstraw/Documents/github/versionctrl/versionctrl'
+let g:netrw_dirhist_8='/home/jackstraw/.myeclipse'
