@@ -1,15 +1,20 @@
 set nu
 colorscheme evening
+"colorscheme desert
 filetype indent on
+set nocompatible
+set autoread
+set cursorline
+set guioptions-=T
+set guioptions-=m
 
 autocmd FileType js,m,c,java,py,sh,cpp,html,php,rb set shiftwidth=4|set ts=4|set expandtab
 
-set fdm=syntax
 syntax on
 
 au BufNewFile,BufRead *.pc set filetype=c
 
-set tags=/home/jackstraw/Documents/github/threadPool/tags,$WXC/tags,/home/jackstraw/Documents/security/svn/secgroup/trunk/source/003PPBankSec/tags,~/symbol/001FinancialSecLib/tags,$WXC/mySourceCode/tags,~/software/source/Python-2.7.10/tags,/home/jackstraw/software/source/curl-7.44.0/tags
+set tags=/home/jackstraw/Documents/yc/dualandroid/android5.1/tags
 
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
@@ -29,16 +34,53 @@ filetype plugin indent on
 "set mouse=a
 
 "Taglist
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Use_Right_Window = 1
-let Tlist_Show_One_File = 1
-noremap <F9> :TlistToggle<CR>
+"let Tlist_Use_Right_Window = 1
+"let Tlist_Show_One_File = 1
+"noremap <F9> :TlistToggle<CR>
 
-" python complete
-let g:pydiction_location = '~/.vim/tools/pydiction/complete-dict'
+" cscope
+cs add ./cscope.out
 
-"inoremap ( ()<esc>i
-"inoremap { {<esc>o}<esc>O
-"inoremap [ []<esc>i
-"inoremap < <><esc>i
-"inoremap ' ''<esc>i
+
+
+
+"------WinManager NERDTree TagList MinniBufExploer setting---------------"
+"1 <enter> if file then open it; 2 <tab> if file then open it in NEW window; 3 <u> to update in tag_list
+"Usage in winmanger
+"	c:change cur DIR to work DIR of vim
+"	D:delete file or dir in cursor
+"	i:chage type of display
+"	R:rename file or dir
+"let g:winManagerWindowLayout='FileExplorer|TagList'
+
+let Tlist_Process_File_Always=1
+let g:NERDTree_title='[NERDTree]'
+let g:winManagerWindowLayout='NERDTree|TagList'
+function! NERDTree_Start()
+    exec 'NERDTree'
+endfunction
+
+function! NERDTree_IsValid()
+    return 1
+endfunction
+
+let g:persistentBehaviour=0
+let g:Tlist_Exit_OnlyWindow = 1
+nmap wm :WMToggle<cr>
+
+let g:miniBufExplMapWindowNavVim = 1   
+let g:miniBufExplMapWindowNavArrows = 1   
+let g:miniBufExplMapCTabSwitchBufs = 1   
+let g:miniBufExplModSelTarget = 1  
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplMoreThanOne=0
+
+"-----------------------------------END-----------------------------------"
+
+
+
+
+"-----fold setting-----"
+"###1 <zM>:close all folder; 2 <zR>:open all folder###
+set fdm=syntax
+"-----END-----"
