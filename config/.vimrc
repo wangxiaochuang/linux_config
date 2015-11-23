@@ -4,7 +4,7 @@ colorscheme evening
 filetype indent on
 set nocompatible
 set autoread
-set cursorline
+"set cursorline
 set guioptions-=T
 set guioptions-=m
 
