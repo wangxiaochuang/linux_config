@@ -14,7 +14,9 @@ syntax on
 
 au BufNewFile,BufRead *.pc set filetype=c
 
-set tags=/home/jackstraw/Documents/yc/dualandroid/android5.1/tags
+set tags=/home/jackstraw/Documents/yc/dualandroid/lxc/kernel_msm_note/tags
+",/home/jackstraw/Documents/yc/dualandroid/android5.1/tags
+"set tags=/home/jackstraw/software/source/linux-2.6.32.64/tags
 
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
