@@ -97,10 +97,10 @@ alias myxp='rdesktop -a 16 192.168.187.128 -u administrator -p jackstraw -g work
 alias mywin7='rdesktop -a 16 192.168.22.49 -u a -p jackstraw -K -g workarea -D &'
 alias centos='ssh -o GSSAPIAuthentication=no root@192.168.22.182'
 alias xcode='ssh -o GSSAPIAuthentication=no 172.16.154.132'
-alias dbs='sudo mount -t cifs -o username=wxc,password=wxc,uid=1000,gid=1000 //192.168.22.209/share /home/jackstraw/share'
+alias img='sudo mount -t cifs -o username=jackstraw,password=jackstraw,uid=1000,gid=1000 //192.168.1.105/system_share /home/jackstraw/tmp/share'
 
 alias vm-kali-gui='rdesktop -a 16 192.168.22.116 -u root -p jackstraw -K -g workarea -D &'
-alias vm-kali-cmd='ssh root@192.168.22.116'
+alias ubuntu='ssh -Y jackstraw@192.168.1.105'
 alias add-kali-gui='rdesktop -a 16 192.168.22.49 -u root -p jackstrawxx -K -g workarea -D &'
 alias add-kali-cmd='ssh root@192.168.22.49'
 
@@ -140,9 +140,11 @@ fi
 
 #JAVA
 #export JAVA_HOME=~/software/java/jdk1.8.0_25
-export JAVA_HOME=~/software/java/jdk1.7.0_71
+#export JAVA_HOME=~/software/java/jdk1.7.0_71
 #export JAVA_HOME=~/software/java/jdk1.6.0_45
 export CLASSPATH=$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/jre/lib
 
 export PATH=~/software/local/bin:~/software/bin:$JAVA_HOME/bin:$PATH:/sbin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/jackstraw/Documents/yc/skf_linux:/home/jackstraw/Documents/yc/skf_linux/ext_lib
+
+export ANDROID_PRODUCT_OUT=/home/jackstraw/tmp/share/backup/android5.1/out/target/product/hammerhead
