@@ -1,7 +1,7 @@
 #!/bin/bash
 
 config_dir=`pwd`
-list_file=`ls -a $config_dir`
+list_file=".tmux.conf .vimrc .vim .Xmodmap .bashrc"
 cd ~
 
 for file in $list_file
