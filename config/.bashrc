@@ -142,7 +142,7 @@ fi
 #export JAVA_HOME=~/software/java/jdk1.8.0_25
 #export JAVA_HOME=~/software/java/jdk1.7.0_71
 #export JAVA_HOME=~/software/java/jdk1.6.0_45
-export CLASSPATH=$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/jre/lib
+#export CLASSPATH=$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/jre/lib
 
 export PATH=~/software/local/bin:~/software/bin:$JAVA_HOME/bin:$PATH:/sbin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/jackstraw/Documents/yc/skf_linux:/home/jackstraw/Documents/yc/skf_linux/ext_lib
