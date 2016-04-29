@@ -31,6 +31,8 @@ set incsearch                                      " 在搜索时，输入的词
 
 autocmd BufNewFile *.c 0r ~/.vim/template/c.tlp
 autocmd BufNewFile *.java 0r ~/.vim/template/java.tlp
+autocmd BufNewFile *.py 0r ~/.vim/template/python.tlp
+autocmd BufNewFile *.sh 0r ~/.vim/template/shell.tlp
 filetype plugin on
 filetype plugin indent on
 "set mouse=a
